@@ -1,0 +1,30 @@
+.fade {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 8px;
+  padding: 8px;
+  margin-left: 16px;
+}
+
+.fadeIn {
+  animation: animate 0.5s linear both;
+}
+.fadeIn2 {
+  animation: animate 0.5s 0.3s linear both;
+}
+.fadeIn3 {
+  animation: animate 0.5s 0.6s linear both;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: teal;
+  }
+}
